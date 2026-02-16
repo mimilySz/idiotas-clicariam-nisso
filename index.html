@@ -59,14 +59,19 @@ button:hover {
 
 .gif-container {
   display: none;
-  text-align: center;
-  margin-top: 60px;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
 }
 
 .fade-gif {
-  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
   animation: fadeOut 4s forwards;
 }
 
@@ -89,7 +94,7 @@ button:hover {
 <button onclick="revelar()">Lê com atenção, idiota 🤍</button>
 
 <div class="gif-container" id="gifContainer">
-  <img src="https://i.pinimg.com/originals/99/58/d1/9958d161d49f9977d02890fa2050c47a.gif" class="fade-gif" width="400">
+  <img src="https://i.pinimg.com/originals/99/58/d1/9958d161d49f9977d02890fa2050c47a.gif" class="fade-gif">
 </div>
 
 <div class="container" id="texto">
@@ -134,3 +139,4 @@ function revelar() {
 
 </body>
 </html>
+
